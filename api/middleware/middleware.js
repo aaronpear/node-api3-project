@@ -20,7 +20,6 @@ async function validateUserId(req, res, next) {
   } catch (err) {
     res.status(500).json({ message: "error validating user ID" });
   }
-  next();
 }
 
 function validateUser(req, res, next) {
